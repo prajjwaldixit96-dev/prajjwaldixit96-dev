@@ -1,0 +1,19 @@
+<svg width="380" height="150" viewBox="0 0 380 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .card { fill: #1a1b27; stroke: #414868; stroke-width: 1; }
+    .title { font: 600 18px 'Segoe UI', sans-serif; fill: #bb9af7; }
+    .label { font: 400 13px 'Segoe UI', sans-serif; fill: #c0caf5; }
+    .value { font: 600 13px 'Segoe UI', sans-serif; fill: #7aa2f7; }
+  </style>
+  <rect x="0.5" y="0.5" width="379" height="149" rx="12" class="card"/>
+  <text x="30" y="34" class="title">Most used languages</text>
+  
+  <text x="30" y="60" class="label">HTML</text>
+  <text x="330" y="60" text-anchor="end" class="value">85%</text>
+  <rect x="30" y="68" width="300" height="8" rx="4" fill="#292e42"/>
+  <rect x="30" y="68" width="204" height="8" rx="4" fill="#e34c26"/>
+  <text x="30" y="100" class="label">Python</text>
+  <text x="330" y="100" text-anchor="end" class="value">15%</text>
+  <rect x="30" y="108" width="300" height="8" rx="4" fill="#292e42"/>
+  <rect x="30" y="108" width="36" height="8" rx="4" fill="#3572A5"/>
+</svg>

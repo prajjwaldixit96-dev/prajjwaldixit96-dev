@@ -1,0 +1,25 @@
+<svg width="380" height="250" viewBox="0 0 380 250" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .card { fill: #1a1b27; stroke: #414868; stroke-width: 1; }
+    .title { font: 600 18px 'Segoe UI', sans-serif; fill: #bb9af7; }
+    .label { font: 400 14px 'Segoe UI', sans-serif; fill: #c0caf5; }
+    .value { font: 600 14px 'Segoe UI', sans-serif; fill: #7aa2f7; }
+    .rank { font: 700 30px 'Segoe UI', sans-serif; fill: #f7768e; }
+    .rank-ring { fill: none; stroke: #414868; stroke-width: 5; }
+  </style>
+  <rect x="0.5" y="0.5" width="379" height="249" rx="12" class="card"/>
+  <text x="30" y="34" class="title">prajjwaldixit96-dev's GitHub stats</text>
+  
+  <text x="30" y="70" class="label">Total Stars</text>
+  <text x="330" y="70" text-anchor="end" class="value">0</text>
+  <text x="30" y="102" class="label">Total Commits (last yr)</text>
+  <text x="330" y="102" text-anchor="end" class="value">64</text>
+  <text x="30" y="134" class="label">Total PRs</text>
+  <text x="330" y="134" text-anchor="end" class="value">2</text>
+  <text x="30" y="166" class="label">Total Issues</text>
+  <text x="330" y="166" text-anchor="end" class="value">0</text>
+  <text x="30" y="198" class="label">Contributions (last yr)</text>
+  <text x="330" y="198" text-anchor="end" class="value">80</text>
+  <circle cx="345" cy="34" r="24" class="rank-ring"/>
+  <text x="345" y="41" text-anchor="middle" class="rank">B</text>
+</svg>

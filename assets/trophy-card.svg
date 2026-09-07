@@ -1,0 +1,33 @@
+<svg width="600" height="160" viewBox="0 0 600 160" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .label { font: 500 13px 'Segoe UI', sans-serif; fill: #c0caf5; }
+    .value { font: 400 12px 'Segoe UI', sans-serif; fill: #9aa5ce; }
+    .tier { font: 700 34px 'Segoe UI', sans-serif; }
+  </style>
+  <rect x="0.5" y="0.5" width="599" height="159" rx="12" fill="#0f1017" stroke="#414868"/>
+  
+  <g transform="translate(20,20)">
+    <rect width="130" height="120" rx="10" fill="#1a1b27" stroke="#565f89" stroke-width="2"/>
+    <text x="65" y="30" text-anchor="middle" class="label">Stars</text>
+    <text x="65" y="72" text-anchor="middle" class="tier" fill="#565f89">C</text>
+    <text x="65" y="100" text-anchor="middle" class="value">0</text>
+  </g>
+  <g transform="translate(160,20)">
+    <rect width="130" height="120" rx="10" fill="#1a1b27" stroke="#7aa2f7" stroke-width="2"/>
+    <text x="65" y="30" text-anchor="middle" class="label">Commits</text>
+    <text x="65" y="72" text-anchor="middle" class="tier" fill="#7aa2f7">B</text>
+    <text x="65" y="100" text-anchor="middle" class="value">64</text>
+  </g>
+  <g transform="translate(300,20)">
+    <rect width="130" height="120" rx="10" fill="#1a1b27" stroke="#9ece6a" stroke-width="2"/>
+    <text x="65" y="30" text-anchor="middle" class="label">Repos</text>
+    <text x="65" y="72" text-anchor="middle" class="tier" fill="#9ece6a">A</text>
+    <text x="65" y="100" text-anchor="middle" class="value">13</text>
+  </g>
+  <g transform="translate(440,20)">
+    <rect width="130" height="120" rx="10" fill="#1a1b27" stroke="#565f89" stroke-width="2"/>
+    <text x="65" y="30" text-anchor="middle" class="label">Followers</text>
+    <text x="65" y="72" text-anchor="middle" class="tier" fill="#565f89">C</text>
+    <text x="65" y="100" text-anchor="middle" class="value">0</text>
+  </g>
+</svg>
