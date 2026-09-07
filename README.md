@@ -187,12 +187,17 @@ A full-stack e-commerce application built with Django.
 
 # 🎮 Developer Game Zone
 
-### 🐍 Contribution Snake
+<div align="center">
 
-Watch the snake eat your GitHub contributions!
+## 🐍 Play My Snake Game
 
-<img src="https://raw.githubusercontent.com/prajjwaldixit96-dev/prajjwaldixit96-dev/output/github-contribution-grid-snake.svg" width="800"/>
+A small Snake game built with HTML, CSS and JavaScript.
 
+<a href="https://prajjwaldixit96-dev.github.io/prajjwaldixit96-dev/games/snake.html">
+  <img src="https://img.shields.io/badge/🎮%20PLAY%20SNAKE%20GAME-238636?style=for-the-badge" />
+</a>
+
+</div>
 ### 🎯 Challenge
 
 > Can you maintain a 30-day contribution streak?
