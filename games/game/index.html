@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Developer Game</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #050816;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    width: 900px;
+    max-width: 95%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #8b949e;
+    margin-bottom: 20px;
+}
+
+.game-box {
+    position: relative;
+    width: 100%;
+    height: 500px;
+
+    background:
+        linear-gradient(rgba(0,255,255,.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,255,255,.05) 1px, transparent 1px),
+        #080d1c;
+
+    background-size: 30px 30px;
+
+    border: 2px solid #00e5ff;
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 0 20px rgba(0,229,255,.25),
+        inset 0 0 30px rgba(0,229,255,.05);
+}
+
+.player {
+    position: absolute;
+
+    width: 45px;
+    height: 45px;
+
+    left: 100px;
+    bottom: 40px;
+
+    background: #00e5ff;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 0 10px #00e5ff,
+        0 0 25px #00e5ff;
+
+    transition: left .1s linear;
+}
+
+.obstacle {
+    position: absolute;
+
+    width: 40px;
+    height: 40px;
+
+    background: #ff2bd6;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 0 10px #ff2bd6,
+        0 0 25px #ff2bd6;
+}
+
+.score {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+
+    font-size: 20px;
+    color: #00e5ff;
+}
+
+.status {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+
+    color: #55ff88;
+}
+
+.message {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 30px;
+
+    color: white;
+
+    opacity: 0;
+
+    pointer-events: none;
+}
+
+.footer {
+    margin-top: 15px;
+    color: #8b949e;
+}
+
+kbd {
+    background: #161b22;
+    border: 1px solid #30363d;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="game-container">
+
+    <h1>🎮 Developer Game</h1>
+
+    <div class="subtitle">
+        Auto Running • Built with HTML, CSS & JavaScript
+    </div>
+
+    <div class="game-box">
+
+        <div class="score">
+            SCORE: <span id="score">0</span>
+        </div>
+
+        <div class="status">
+            ● AUTO PLAYING
+        </div>
+
+        <div class="player" id="player"></div>
+
+        <div class="message" id="message">
+            GAME OVER
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Use <kbd>←</kbd> <kbd>→</kbd> to control the player
+        • Game automatically restarts
+    </div>
+
+</div>
+
+
+<script>
+
+const gameBox = document.querySelector(".game-box");
+const player = document.getElementById("player");
+const scoreText = document.getElementById("score");
+const message = document.getElementById("message");
+
+let playerX = 100;
+let score = 0;
+
+let obstacles = [];
+
+let gameRunning = true;
+
+let keys = {
+    left: false,
+    right: false
+};
+
+
+// Keyboard controls
+
+document.addEventListener("keydown", function(e) {
+
+    if (e.key === "ArrowLeft") {
+        keys.left = true;
+    }
+
+    if (e.key === "ArrowRight") {
+        keys.right = true;
+    }
+
+});
+
+document.addEventListener("keyup", function(e) {
+
+    if (e.key === "ArrowLeft") {
+        keys.left = false;
+    }
+
+    if (e.key === "ArrowRight") {
+        keys.right = false;
+    }
+
+});
+
+
+// Create obstacle
+
+function createObstacle() {
+
+    const obstacle = document.createElement("div");
+
+    obstacle.classList.add("obstacle");
+
+    let randomX =
+        Math.random() *
+        (gameBox.clientWidth - 40);
+
+    obstacle.style.left = randomX + "px";
+
+    obstacle.style.top = "-50px";
+
+    gameBox.appendChild(obstacle);
+
+    obstacles.push({
+        element: obstacle,
+        x: randomX,
+        y: -50,
+        speed: 3 + Math.random() * 2
+    });
+
+}
+
+
+// Collision detection
+
+function collision(a, b) {
+
+    const rect1 = a.getBoundingClientRect();
+    const rect2 = b.getBoundingClientRect();
+
+    return !(
+        rect1.right < rect2.left ||
+        rect1.left > rect2.right ||
+        rect1.bottom < rect2.top ||
+        rect1.top > rect2.bottom
+    );
+
+}
+
+
+// Game loop
+
+function gameLoop() {
+
+    if (!gameRunning) return;
+
+
+    // Automatic movement
+
+    if (!keys.left && !keys.right) {
+
+        playerX +=
+            Math.sin(Date.now() / 700) * 1.5;
+
+    }
+
+
+    // Manual movement
+
+    if (keys.left) {
+        playerX -= 5;
+    }
+
+    if (keys.right) {
+        playerX += 5;
+    }
+
+
+    // Keep inside game
+
+    if (playerX < 0) {
+        playerX = 0;
+    }
+
+    if (playerX >
+        gameBox.clientWidth - 45) {
+
+        playerX =
+            gameBox.clientWidth - 45;
+
+    }
+
+
+    player.style.left =
+        playerX + "px";
+
+
+    // Move obstacles
+
+    obstacles.forEach((obstacle, index) => {
+
+        obstacle.y += obstacle.speed;
+
+        obstacle.element.style.top =
+            obstacle.y + "px";
+
+
+        // Collision
+
+        if (
+            collision(
+                player,
+                obstacle.element
+            )
+        ) {
+
+            endGame();
+
+        }
+
+
+        // Remove obstacle
+
+        if (
+            obstacle.y >
+            gameBox.clientHeight
+        ) {
+
+            obstacle.element.remove();
+
+            obstacles.splice(index, 1);
+
+            score++;
+
+            scoreText.textContent =
+                score;
+
+        }
+
+    });
+
+
+    requestAnimationFrame(gameLoop);
+
+}
+
+
+// End game
+
+function endGame() {
+
+    if (!gameRunning) return;
+
+    gameRunning = false;
+
+    message.style.opacity = "1";
+
+    setTimeout(restartGame, 1000);
+
+}
+
+
+// Restart automatically
+
+function restartGame() {
+
+    obstacles.forEach(o =>
+        o.element.remove()
+    );
+
+    obstacles = [];
+
+    playerX = 100;
+
+    score = 0;
+
+    scoreText.textContent = "0";
+
+    message.style.opacity = "0";
+
+    gameRunning = true;
+
+    gameLoop();
+
+}
+
+
+// Spawn obstacles continuously
+
+setInterval(function() {
+
+    if (gameRunning) {
+        createObstacle();
+    }
+
+}, 700);
+
+
+// Start game automatically
+
+gameLoop();
+
+</script>
+
+</body>
+</html>
