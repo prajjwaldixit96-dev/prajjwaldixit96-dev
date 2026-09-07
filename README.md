@@ -20,7 +20,7 @@
 
 Full Stack Developer with a passion for crafting **robust and scalable web applications**, backed by hands-on experience across the full development lifecycle — from concept to deployment. I specialize in building secure, production-ready systems with **Python and Django**, and I'm always looking to turn real-world problems into clean, working software.
 
-- 🎓 Pursuing **MCA** at Babu Banarsi Das University (2024 – 2026), BCA from Public College of Professional Studies (2021 – 2024)
+- 🎓 **MCA** graduate from Babu Banarsi Das University (2024 – 2026), BCA from Public College of Professional Studies (2021 – 2024)
 - 💼 Completed a 90-day Industrial Training in Web Development at **Techpile Technology Pvt. Ltd.**, working across frontend, backend, authentication, and database integration
 - 🔐 Experienced with CRUD, Authentication, REST APIs, and end-to-end database integration
 - 🌱 Currently sharpening my backend engineering and DSA fundamentals
@@ -58,39 +58,43 @@ Full Stack Developer with a passion for crafting **robust and scalable web appli
 ### 💻 Programming Languages
 
 <p align="left">
-<img src="https://skillicons.dev/icons?i=java,python,js" height="55" />
+<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+<img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
 </p>
 
 ### 🌐 Frontend
 
 <p align="left">
-<img src="https://skillicons.dev/icons?i=html,css,bootstrap" height="55" />
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+<img src="https://img.shields.io/badge/Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" />
 </p>
 
 ### ⚙️ Frameworks & Libraries
 
 <p align="left">
-<img src="https://skillicons.dev/icons?i=django" height="55" />
-</p>
-<p align="left">
-<img src="https://img.shields.io/badge/Django%20REST%20Framework-092E20?style=for-the-badge&logo=django&logoColor=white" />
+<img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" />
+<img src="https://img.shields.io/badge/Django_REST_Framework-A30000?style=for-the-badge&logo=django&logoColor=white" />
 <img src="https://img.shields.io/badge/WhiteNoise-333333?style=for-the-badge" />
 <img src="https://img.shields.io/badge/Pillow-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/Groq%20SDK-F55036?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Groq_SDK-F55036?style=for-the-badge" />
 </p>
 
 ### 🗄️ Databases
 
 <p align="left">
-<img src="https://skillicons.dev/icons?i=mysql,sqlite" height="55" />
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
+<img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
 </p>
 
 ### 🔧 Tools & Platforms
 
 <p align="left">
-<img src="https://skillicons.dev/icons?i=git,github,vscode" height="55" />
-</p>
-<p align="left">
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+<img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
 <img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white" />
 </p>
 
@@ -98,13 +102,23 @@ Full Stack Developer with a passion for crafting **robust and scalable web appli
 
 <p align="left">
 <img src="https://img.shields.io/badge/Razorpay-0C2451?style=for-the-badge&logo=razorpay&logoColor=white" />
-<img src="https://img.shields.io/badge/Groq%20API-F55036?style=for-the-badge" />
-<img src="https://img.shields.io/badge/SMTP%20Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+<img src="https://img.shields.io/badge/Groq_API-F55036?style=for-the-badge" />
+<img src="https://img.shields.io/badge/SMTP_Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </p>
 
 ### 🗣️ Languages I Speak
 
-`Hindi` `English`
+<p align="left">
+<img src="https://img.shields.io/badge/Hindi-6A1B9A?style=for-the-badge" />
+<img src="https://img.shields.io/badge/English-6A1B9A?style=for-the-badge" />
+</p>
+
+### 🗣️ Languages I Speak
+
+<p align="left">
+<img src="https://img.shields.io/badge/Hindi-6A1B9A?style=for-the-badge" />
+<img src="https://img.shields.io/badge/English-6A1B9A?style=for-the-badge" />
+</p>
 
 ---
 
@@ -180,10 +194,7 @@ Developed a full-stack e-commerce web application featuring product listings, sh
 
 <div align="center">
 
-<img
-  src="https://github-readme-activity-graph.vercel.app/graph?username=prajjwaldixit96-dev&theme=tokyo-night&hide_border=true&area=true"
-  width="95%"
-/>
+<img src="./assets/activity-graph.svg" width="70%" alt="Contribution Activity" />
 
 </div>
 
