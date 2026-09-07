@@ -4,177 +4,290 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Developer Game</title>
+<title>Developer Space Shooter</title>
 
 <style>
+
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    min-height: 100vh;
     background: #050816;
     color: white;
     font-family: Arial, sans-serif;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
 }
 
-.game-container {
-    width: 900px;
-    max-width: 95%;
-    text-align: center;
-}
-
-h1 {
-    font-size: 32px;
-    margin-bottom: 5px;
-}
-
-.subtitle {
-    color: #8b949e;
-    margin-bottom: 20px;
-}
-
-.game-box {
+#game {
+    width: 100vw;
+    height: 100vh;
     position: relative;
-    width: 100%;
-    height: 500px;
-
-    background:
-        linear-gradient(rgba(0,255,255,.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0,255,255,.05) 1px, transparent 1px),
-        #080d1c;
-
-    background-size: 30px 30px;
-
-    border: 2px solid #00e5ff;
-    border-radius: 15px;
-
     overflow: hidden;
 
-    box-shadow:
-        0 0 20px rgba(0,229,255,.25),
-        inset 0 0 30px rgba(0,229,255,.05);
+    background:
+        radial-gradient(circle at 20% 20%, #101b3c 0%, transparent 25%),
+        radial-gradient(circle at 80% 70%, #17113b 0%, transparent 25%),
+        #050816;
 }
 
-.player {
+/* Stars */
+
+.star {
     position: absolute;
-
-    width: 45px;
-    height: 45px;
-
-    left: 100px;
-    bottom: 40px;
-
-    background: #00e5ff;
-
-    border-radius: 10px;
-
-    box-shadow:
-        0 0 10px #00e5ff,
-        0 0 25px #00e5ff;
-
-    transition: left .1s linear;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    animation: starMove linear infinite;
 }
 
-.obstacle {
-    position: absolute;
+@keyframes starMove {
 
-    width: 40px;
-    height: 40px;
+    from {
+        transform: translateY(-20px);
+    }
 
-    background: #ff2bd6;
+    to {
+        transform: translateY(110vh);
+    }
 
-    border-radius: 8px;
-
-    box-shadow:
-        0 0 10px #ff2bd6,
-        0 0 25px #ff2bd6;
 }
 
-.score {
+/* Header */
+
+#header {
+
     position: absolute;
     top: 15px;
     left: 20px;
-
-    font-size: 20px;
-    color: #00e5ff;
-}
-
-.status {
-    position: absolute;
-    top: 15px;
     right: 20px;
 
-    color: #55ff88;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 12px 18px;
+
+    border: 1px solid #00e5ff;
+    border-radius: 10px;
+
+    background: rgba(5, 8, 22, 0.8);
+
+    box-shadow:
+        0 0 15px rgba(0,229,255,.3);
+
+    z-index: 10;
 }
 
-.message {
+.title {
+    color: #00e5ff;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#score {
+    color: #fff;
+}
+
+/* Player */
+
+#player {
+
     position: absolute;
 
-    top: 50%;
-    left: 50%;
+    width: 0;
+    height: 0;
 
-    transform: translate(-50%, -50%);
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+    border-bottom: 45px solid #00e5ff;
 
-    font-size: 30px;
+    filter:
+        drop-shadow(0 0 8px #00e5ff)
+        drop-shadow(0 0 20px #00e5ff);
 
-    color: white;
-
-    opacity: 0;
-
-    pointer-events: none;
+    z-index: 5;
 }
 
-.footer {
-    margin-top: 15px;
-    color: #8b949e;
-}
+/* Player cockpit */
 
-kbd {
-    background: #161b22;
-    border: 1px solid #30363d;
-    padding: 4px 8px;
+#player::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 8px;
+    height: 15px;
+
+    background: white;
+
+    left: -4px;
+    top: 18px;
+
     border-radius: 5px;
+
 }
+
+/* Bullet */
+
+.bullet {
+
+    position: absolute;
+
+    width: 4px;
+    height: 18px;
+
+    background: #ff00aa;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 0 8px #ff00aa,
+        0 0 18px #ff00aa;
+
+}
+
+/* Enemy */
+
+.enemy {
+
+    position: absolute;
+
+    width: 42px;
+    height: 28px;
+
+    background: #ff3355;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 10px #ff3355,
+        0 0 25px #ff3355;
+
+}
+
+.enemy::before,
+.enemy::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 8px;
+    height: 8px;
+
+    background: #050816;
+
+    border-radius: 50%;
+
+    top: 8px;
+
+}
+
+.enemy::before {
+    left: 8px;
+}
+
+.enemy::after {
+    right: 8px;
+}
+
+.enemy span {
+
+    position: absolute;
+
+    bottom: -7px;
+
+    width: 12px;
+    height: 8px;
+
+    background: #ff9d00;
+
+    border-radius: 50%;
+
+    left: 15px;
+
+}
+
+/* Explosion */
+
+.explosion {
+
+    position: absolute;
+
+    width: 15px;
+    height: 15px;
+
+    border: 3px solid #ffe600;
+
+    border-radius: 50%;
+
+    animation: explode .4s forwards;
+
+}
+
+@keyframes explode {
+
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(5);
+        opacity: 0;
+    }
+
+}
+
+/* Bottom */
+
+#status {
+
+    position: absolute;
+
+    bottom: 15px;
+    left: 20px;
+    right: 20px;
+
+    text-align: center;
+
+    color: #00e5ff;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    opacity: .8;
+
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="game-container">
+<div id="game">
 
-    <h1>🎮 Developer Game</h1>
+    <div id="header">
 
-    <div class="subtitle">
-        Auto Running • Built with HTML, CSS & JavaScript
-    </div>
-
-    <div class="game-box">
-
-        <div class="score">
-            SCORE: <span id="score">0</span>
+        <div class="title">
+            ⚡ DEVELOPER SPACE SHOOTER
         </div>
 
-        <div class="status">
-            ● AUTO PLAYING
-        </div>
-
-        <div class="player" id="player"></div>
-
-        <div class="message" id="message">
-            GAME OVER
+        <div id="score">
+            SCORE: 00000
         </div>
 
     </div>
 
-    <div class="footer">
-        Use <kbd>←</kbd> <kbd>→</kbd> to control the player
-        • Game automatically restarts
+    <div id="player"></div>
+
+    <div id="status">
+        AUTO RUNNING • PYTHON • DJANGO • JAVASCRIPT
     </div>
 
 </div>
@@ -182,182 +295,297 @@ kbd {
 
 <script>
 
-const gameBox = document.querySelector(".game-box");
+const game = document.getElementById("game");
 const player = document.getElementById("player");
 const scoreText = document.getElementById("score");
-const message = document.getElementById("message");
 
-let playerX = 100;
 let score = 0;
 
-let obstacles = [];
+let playerX = window.innerWidth / 2;
+let playerY = window.innerHeight - 90;
 
-let gameRunning = true;
+let direction = 1;
 
-let keys = {
-    left: false,
-    right: false
-};
-
-
-// Keyboard controls
-
-document.addEventListener("keydown", function(e) {
-
-    if (e.key === "ArrowLeft") {
-        keys.left = true;
-    }
-
-    if (e.key === "ArrowRight") {
-        keys.right = true;
-    }
-
-});
-
-document.addEventListener("keyup", function(e) {
-
-    if (e.key === "ArrowLeft") {
-        keys.left = false;
-    }
-
-    if (e.key === "ArrowRight") {
-        keys.right = false;
-    }
-
-});
+let bullets = [];
+let enemies = [];
 
 
-// Create obstacle
+// -------------------------
+// CREATE STARS
+// -------------------------
 
-function createObstacle() {
+for (let i = 0; i < 100; i++) {
 
-    const obstacle = document.createElement("div");
+    const star = document.createElement("div");
 
-    obstacle.classList.add("obstacle");
+    star.className = "star";
 
-    let randomX =
-        Math.random() *
-        (gameBox.clientWidth - 40);
+    star.style.left =
+        Math.random() * 100 + "%";
 
-    obstacle.style.left = randomX + "px";
+    star.style.top =
+        Math.random() * 100 + "%";
 
-    obstacle.style.top = "-50px";
+    star.style.animationDuration =
+        (2 + Math.random() * 5) + "s";
 
-    gameBox.appendChild(obstacle);
+    star.style.animationDelay =
+        Math.random() * 5 + "s";
 
-    obstacles.push({
-        element: obstacle,
-        x: randomX,
-        y: -50,
-        speed: 3 + Math.random() * 2
+    game.appendChild(star);
+
+}
+
+
+// -------------------------
+// PLAYER
+// -------------------------
+
+function updatePlayer() {
+
+    player.style.left =
+        playerX + "px";
+
+    player.style.top =
+        playerY + "px";
+
+}
+
+updatePlayer();
+
+
+// -------------------------
+// SHOOT
+// -------------------------
+
+function shoot() {
+
+    const bullet =
+        document.createElement("div");
+
+    bullet.className = "bullet";
+
+    let x = playerX - 2;
+
+    let y = playerY - 20;
+
+    bullet.style.left = x + "px";
+
+    bullet.style.top = y + "px";
+
+    game.appendChild(bullet);
+
+    bullets.push({
+        element: bullet,
+        x: x,
+        y: y
     });
 
 }
 
 
-// Collision detection
+// -------------------------
+// CREATE ENEMY
+// -------------------------
+
+function createEnemy() {
+
+    const enemy =
+        document.createElement("div");
+
+    enemy.className = "enemy";
+
+    const flame =
+        document.createElement("span");
+
+    enemy.appendChild(flame);
+
+    let x =
+        50 +
+        Math.random() *
+        (window.innerWidth - 100);
+
+    let y = -40;
+
+    enemy.style.left =
+        x + "px";
+
+    enemy.style.top =
+        y + "px";
+
+    game.appendChild(enemy);
+
+    enemies.push({
+
+        element: enemy,
+
+        x: x,
+
+        y: y,
+
+        speed:
+            1.5 +
+            Math.random() * 2
+
+    });
+
+}
+
+
+// -------------------------
+// EXPLOSION
+// -------------------------
+
+function explosion(x, y) {
+
+    const e =
+        document.createElement("div");
+
+    e.className = "explosion";
+
+    e.style.left =
+        x + "px";
+
+    e.style.top =
+        y + "px";
+
+    game.appendChild(e);
+
+    setTimeout(() => {
+
+        e.remove();
+
+    }, 400);
+
+}
+
+
+// -------------------------
+// COLLISION
+// -------------------------
 
 function collision(a, b) {
 
-    const rect1 = a.getBoundingClientRect();
-    const rect2 = b.getBoundingClientRect();
+    return (
 
-    return !(
-        rect1.right < rect2.left ||
-        rect1.left > rect2.right ||
-        rect1.bottom < rect2.top ||
-        rect1.top > rect2.bottom
+        a.x < b.x + 42 &&
+
+        a.x + 4 > b.x &&
+
+        a.y < b.y + 28 &&
+
+        a.y + 18 > b.y
+
     );
 
 }
 
 
-// Game loop
+// -------------------------
+// GAME LOOP
+// -------------------------
 
 function gameLoop() {
 
-    if (!gameRunning) return;
+    // Player automatic movement
 
+    playerX += direction * 2.2;
 
-    // Automatic movement
+    if (
+        playerX >
+        window.innerWidth - 35
+    ) {
 
-    if (!keys.left && !keys.right) {
-
-        playerX +=
-            Math.sin(Date.now() / 700) * 1.5;
-
-    }
-
-
-    // Manual movement
-
-    if (keys.left) {
-        playerX -= 5;
-    }
-
-    if (keys.right) {
-        playerX += 5;
-    }
-
-
-    // Keep inside game
-
-    if (playerX < 0) {
-        playerX = 0;
-    }
-
-    if (playerX >
-        gameBox.clientWidth - 45) {
-
-        playerX =
-            gameBox.clientWidth - 45;
+        direction = -1;
 
     }
 
+    if (playerX < 35) {
 
-    player.style.left =
-        playerX + "px";
+        direction = 1;
 
+    }
 
-    // Move obstacles
-
-    obstacles.forEach((obstacle, index) => {
-
-        obstacle.y += obstacle.speed;
-
-        obstacle.element.style.top =
-            obstacle.y + "px";
+    updatePlayer();
 
 
-        // Collision
+    // Bullets
 
-        if (
-            collision(
-                player,
-                obstacle.element
-            )
-        ) {
+    bullets.forEach((bullet, bi) => {
 
-            endGame();
+        bullet.y -= 9;
+
+        bullet.element.style.top =
+            bullet.y + "px";
+
+
+        if (bullet.y < -30) {
+
+            bullet.element.remove();
+
+            bullets.splice(bi, 1);
+
+            return;
 
         }
 
 
-        // Remove obstacle
+        // Enemy collision
+
+        enemies.forEach((enemy, ei) => {
+
+            if (
+                bullet &&
+                enemy &&
+                collision(bullet, enemy)
+            ) {
+
+                explosion(
+                    enemy.x,
+                    enemy.y
+                );
+
+                enemy.element.remove();
+
+                bullet.element.remove();
+
+                enemies.splice(ei, 1);
+
+                bullets.splice(bi, 1);
+
+                score += 100;
+
+                scoreText.innerText =
+                    "SCORE: " +
+                    String(score).padStart(5, "0");
+
+            }
+
+        });
+
+    });
+
+
+    // Enemies
+
+    enemies.forEach((enemy, ei) => {
+
+        enemy.y += enemy.speed;
+
+        enemy.element.style.top =
+            enemy.y + "px";
+
+
+        // Enemy reaches bottom
 
         if (
-            obstacle.y >
-            gameBox.clientHeight
+            enemy.y >
+            window.innerHeight + 50
         ) {
 
-            obstacle.element.remove();
+            enemy.element.remove();
 
-            obstacles.splice(index, 1);
-
-            score++;
-
-            scoreText.textContent =
-                score;
+            enemies.splice(ei, 1);
 
         }
 
@@ -369,60 +597,44 @@ function gameLoop() {
 }
 
 
-// End game
+// -------------------------
+// AUTO FIRE
+// -------------------------
 
-function endGame() {
+setInterval(() => {
 
-    if (!gameRunning) return;
+    shoot();
 
-    gameRunning = false;
-
-    message.style.opacity = "1";
-
-    setTimeout(restartGame, 1000);
-
-}
+}, 350);
 
 
-// Restart automatically
+// -------------------------
+// AUTO ENEMIES
+// -------------------------
 
-function restartGame() {
+setInterval(() => {
 
-    obstacles.forEach(o =>
-        o.element.remove()
-    );
+    createEnemy();
 
-    obstacles = [];
-
-    playerX = 100;
-
-    score = 0;
-
-    scoreText.textContent = "0";
-
-    message.style.opacity = "0";
-
-    gameRunning = true;
-
-    gameLoop();
-
-}
-
-
-// Spawn obstacles continuously
-
-setInterval(function() {
-
-    if (gameRunning) {
-        createObstacle();
-    }
-
-}, 700);
+}, 650);
 
 
 // Start game automatically
 
 gameLoop();
+
+
+// Responsive
+
+window.addEventListener(
+    "resize",
+    () => {
+
+        playerY =
+            window.innerHeight - 90;
+
+    }
+);
 
 </script>
 
