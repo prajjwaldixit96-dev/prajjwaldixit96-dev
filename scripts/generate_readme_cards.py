@@ -22,7 +22,12 @@ query($login: String!) {
       totalPullRequestContributions
       totalIssueContributions
       totalPullRequestReviewContributions
-      contributionCalendar { totalContributions }
+      contributionCalendar {
+        totalContributions
+        weeks {
+          contributionDays { contributionCount date }
+        }
+      }
     }
   }
 }
@@ -163,6 +168,57 @@ def build_trophy_card(stars, commits, repos_count, followers):
 </svg>'''
 
 
+def build_activity_card(weeks):
+    month_counts = {}
+    order = []
+    for week in weeks:
+        for day in week["contributionDays"]:
+            month = day["date"][:7]
+            if month not in month_counts:
+                month_counts[month] = 0
+                order.append(month)
+            month_counts[month] += day["contributionCount"]
+
+    months = order[-12:]
+    values = [month_counts[m] for m in months]
+    max_val = max(values) if values and max(values) > 0 else 1
+
+    chart_w, chart_h = 320, 130
+    x0, y0 = 30, 40
+    step = chart_w / max(len(months) - 1, 1)
+
+    points = []
+    for i, v in enumerate(values):
+        x = x0 + i * step
+        y = y0 + chart_h - (v / max_val * chart_h)
+        points.append((x, y))
+
+    path_d = "M " + " L ".join(f"{x:.1f},{y:.1f}" for x, y in points)
+    area_d = path_d + f" L {points[-1][0]:.1f},{y0 + chart_h} L {points[0][0]:.1f},{y0 + chart_h} Z"
+
+    dots = "".join(
+        f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3" fill="#7aa2f7"/>' for x, y in points
+    )
+    labels = "".join(
+        f'<text x="{x0 + i * step:.1f}" y="{y0 + chart_h + 20}" text-anchor="middle" class="axis">{months[i][5:]}</text>'
+        for i in range(0, len(months), max(1, len(months) // 6))
+    )
+
+    return f'''<svg width="380" height="{y0 + chart_h + 40}" viewBox="0 0 380 {y0 + chart_h + 40}" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .card {{ fill: #1a1b27; stroke: #414868; stroke-width: 1; }}
+    .title {{ font: 600 18px 'Segoe UI', sans-serif; fill: #bb9af7; }}
+    .axis {{ font: 400 10px 'Segoe UI', sans-serif; fill: #9aa5ce; }}
+  </style>
+  <rect x="0.5" y="0.5" width="379" height="{y0 + chart_h + 39}" rx="12" class="card"/>
+  <text x="30" y="26" class="title">Contribution activity (last 12 months)</text>
+  <path d="{area_d}" fill="#7aa2f7" opacity="0.15"/>
+  <path d="{path_d}" fill="none" stroke="#7aa2f7" stroke-width="2"/>
+  {dots}
+  {labels}
+</svg>'''
+
+
 def main():
     user = fetch_data()
     cc = user["contributionsCollection"]
@@ -186,7 +242,10 @@ def main():
     with open("assets/trophy-card.svg", "w", encoding="utf-8") as f:
         f.write(build_trophy_card(stars, commits, repos_count, followers))
 
-    print("Generated stats-card.svg, languages-card.svg, trophy-card.svg")
+    with open("assets/activity-graph.svg", "w", encoding="utf-8") as f:
+        f.write(build_activity_card(cc["contributionCalendar"]["weeks"]))
+
+    print("Generated stats-card.svg, languages-card.svg, trophy-card.svg, activity-graph.svg")
 
 
 if __name__ == "__main__":
