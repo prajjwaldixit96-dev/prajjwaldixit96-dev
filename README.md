@@ -1,91 +1,57 @@
-<!-- ======================= HEADER ======================= -->
-
 <div align="center">
 
 # 👋 Hi, I'm Prajjwal Dixit
 
-### 🐍 Python & Django Developer | Full Stack Web Developer
+### 💻 Full Stack Developer | Python & Django
 
-<a href="https://github.com/prajjwaldixit96-dev">
-  <img src="https://komarev.com/ghpvc/?username=prajjwaldixit96-dev&label=Profile%20Views&color=0e75b6&style=flat" />
-</a>
-
-<br><br>
-
-<a href="https://www.linkedin.com/">
-  <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin" />
-</a>
-<a href="mailto:prajjwaldixit96@gmail.com">
-  <img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail" />
-</a>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&center=true&vCenter=true&width=650&lines=Full+Stack+Developer;Python+%7C+Django+Developer;Building+Scalable+Web+Applications;Always+Learning+%26+Building" alt="Typing SVG" />
 
 </div>
 
 ---
 
-<!-- ======================= TYPING ======================= -->
+## 👨‍💻 About Me
 
-<div align="center">
-
-<a href="https://git.io/typing-svg">
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=750&lines=Python+%7C+Django+Developer;Full+Stack+Web+Developer;REST+API+Developer;Building+Real+World+Web+Applications;Always+Learning+%26+Building" alt="Typing SVG" />
-</a>
-
-</div>
-
----
-
-# 👨‍💻 About Me
-
-I'm a **Full Stack Web Developer** focused on building practical and scalable web applications using **Python and Django**.
-
-- 🔭 Currently building full-stack web applications using **Python & Django**
-- 🌱 Currently learning **Django REST Framework, REST APIs & Deployment**
-- 💡 Interested in **Backend Development, APIs, Security & Web Applications**
-- 💬 Ask me about **Python, Django, REST APIs, CRUD, Authentication & SQL**
-- 🤝 Open to collaborating on **Django & Full Stack projects**
-- 🎯 Looking for opportunities as a **Python/Django or Full Stack Developer**
-- ⚡ Fun fact: I built my own **AI Assistant using Django + Groq LLM API**
+- 🎓 MCA Graduate from **Babu Banarasi Das University**
+- 💻 Full Stack Developer focused on **Python & Django**
+- 🚀 Interested in building robust and scalable web applications
+- 🔐 Experienced with CRUD, Authentication, APIs and Database Integration
+- 🌱 Currently improving my Backend Development and DSA
+- 📍 Lucknow, Uttar Pradesh, India
 
 ---
 
 # 🛠️ Tech Stack
 
-### 💻 Programming Languages
+## 💻 Programming Languages
 
-<p>
-<img src="https://skillicons.dev/icons?i=python,java,javascript" />
+<p align="left">
+<img src="https://skillicons.dev/icons?i=python,java,js" height="55" />
 </p>
 
-### 🌐 Frontend
+## 🌐 Frontend
 
-<p>
-<img src="https://skillicons.dev/icons?i=html,css,bootstrap,javascript" />
+<p align="left">
+<img src="https://skillicons.dev/icons?i=html,css,bootstrap" height="55" />
 </p>
 
-### ⚙️ Backend & Frameworks
+## ⚙️ Backend & Frameworks
 
-<p>
-<img src="https://skillicons.dev/icons?i=django" />
+<p align="left">
+<img src="https://skillicons.dev/icons?i=django" height="55" />
 </p>
 
-**Django REST Framework • REST APIs • CRUD • Authentication**
+## 🗄️ Databases
 
-### 🗄️ Databases
-
-<p>
-<img src="https://skillicons.dev/icons?i=mysql,sqlite" />
+<p align="left">
+<img src="https://skillicons.dev/icons?i=mysql,sqlite" height="55" />
 </p>
 
-### 🔧 Tools & Platforms
+## 🔧 Tools & Technologies
 
-<p>
-<img src="https://skillicons.dev/icons?i=git,github,vscode" />
+<p align="left">
+<img src="https://skillicons.dev/icons?i=git,github,vscode" height="55" />
 </p>
-
-### 🔌 APIs & Integrations
-
-`REST API` • `Groq API` • `Razorpay` • `SMTP Email`
 
 ---
 
@@ -95,61 +61,77 @@ I'm a **Full Stack Web Developer** focused on building practical and scalable we
 
 A secure file-sharing web application built with Django using a **Zero-Knowledge Security Model**.
 
-### Features
+### ✨ Features
 
 - 🔒 Client-side AES encryption
-- 📁 Secure file upload & download
+- 📁 Secure file upload and download
 - 🔗 Protected sharing links
-- 👤 User authentication
-- 🛡️ Role-based access control
-- 🔐 Secure data management
-- 📧 Email integration
+- 👤 Authentication
+- 🛡️ Role-Based Access Control
+- 📧 SMTP email integration
+- 🔐 Secure file handling
 
-### Tech Used
+### 🧰 Technologies
 
-`Python` `Django` `SQLite` `AES-256` `Fernet` `REST API` `JavaScript` `SMTP` `Git`
+`Python` `Django 5` `SQLite` `AES-256` `Fernet` `REST API` `JavaScript` `SMTP`
 
 ---
 
 ## 🤖 Alfred — Personal AI Assistant
 
-A conversational AI assistant built using **Django and Groq LLM API**.
+A personal AI assistant built using Django and the **Groq LLM API**.
 
-### Features
+### ✨ Features
 
-- 🧠 Conversational AI
-- 💾 Persistent conversation history
+- 💬 AI-powered conversations
+- 🧠 Persistent conversation history
 - 🔄 Context from previous messages
+- 🇮🇳 Hinglish conversation support
 - 💻 Coding assistance
 - 🔎 Research assistance
-- 📅 Scheduling support
-- 💬 Hinglish responses
-- ⚡ Groq LLM integration
+- 📅 Scheduling assistance
 
-### Tech Used
+### 🧰 Technologies
 
-`Python` `Django` `Groq API` `LLaMA` `SQLite` `REST API` `JavaScript` `Fetch API`
+`Python` `Django 5.2` `Groq API` `LLaMA 3.3 70B` `SQLite` `REST API` `JavaScript`
 
 ---
 
 ## 🛒 E-Commerce Platform
 
-A full-stack e-commerce application built with Django.
+A Django-based e-commerce platform with product management, shopping cart, orders and payment integration.
 
-### Features
+### ✨ Features
 
 - 🛍️ Product listings
 - 🛒 Shopping cart
-- 👤 User authentication
 - 📦 Order management
-- 🚚 Order status tracking
+- 👤 User authentication
+- 🔐 Admin dashboard
 - 💳 Razorpay payment integration
-- 🔧 Admin dashboard
-- 🧩 Modular Django architecture
+- 🚚 Order tracking
 
-### Tech Used
+### 🧰 Technologies
 
-`Python` `Django` `MySQL` `Razorpay` `Bootstrap` `JavaScript` `Pillow`
+`Python` `Django 5.2` `MySQL` `Razorpay` `Pillow` `Bootstrap 5` `JavaScript`
+
+---
+
+# 🎮 Developer Space Shooter
+
+<div align="center">
+
+<img
+  src="./assets/shooter.svg"
+  width="100%"
+  alt="Developer Space Shooter"
+/>
+
+<br>
+
+### ⚡ AUTO-RUNNING • SHOOT • DESTROY • SURVIVE
+
+</div>
 
 ---
 
@@ -157,52 +139,23 @@ A full-stack e-commerce application built with Django.
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=prajjwaldixit96-dev&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="180"/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=prajjwaldixit96-dev&layout=compact&theme=tokyonight&hide_border=true" height="180"/>
-
-</div>
-
----
-
-# 🔥 Contribution Streak
-
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=prajjwaldixit96-dev&theme=tokyonight&hide_border=true" />
+<img src="./assets/stats-card.svg" width="45%" alt="GitHub Stats" />
+<img src="./assets/languages-card.svg" width="45%" alt="Most Used Languages" />
 
 </div>
 
 ---
 
-# 🐍 Contribution Snake
+# 🔥 GitHub Contribution Streak
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/prajjwaldixit96-dev/prajjwaldixit96-dev/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake Animation" />
+<img
+  src="https://streak-stats.demolab.com/?user=prajjwaldixit96-dev&theme=tokyonight&hide_border=true"
+  width="70%"
+/>
 
 </div>
-
----
-
-# 🎮 Developer Game Zone
-
-<div align="center">
-
-## 🐍 Play My Snake Game
-
-A small Snake game built with HTML, CSS and JavaScript.
-
-<a href="https://prajjwaldixit96-dev.github.io/prajjwaldixit96-dev/games/snake.html">
-  <img src="https://img.shields.io/badge/🎮%20PLAY%20SNAKE%20GAME-238636?style=for-the-badge" />
-</a>
-
-</div>
-### 🎯 Challenge
-
-> Can you maintain a 30-day contribution streak?
-
-**Goal:** Build something → Commit it → Improve it → Repeat.
 
 ---
 
@@ -210,7 +163,10 @@ A small Snake game built with HTML, CSS and JavaScript.
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=prajjwaldixit96-dev&theme=tokyo-night&hide_border=true" width="100%"/>
+<img
+  src="https://github-readme-activity-graph.vercel.app/graph?username=prajjwaldixit96-dev&theme=tokyo-night&hide_border=true&area=true"
+  width="95%"
+/>
 
 </div>
 
@@ -220,28 +176,24 @@ A small Snake game built with HTML, CSS and JavaScript.
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=prajjwaldixit96-dev&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6" />
+<img src="./assets/trophy-card.svg" width="90%" alt="GitHub Trophies" />
 
 </div>
 
 ---
 
-# 💻 What I'm Currently Focusing On
+# 🎯 Current Focus
+
+<div align="center">
 
 ```text
-Python
-  │
-  ├── Django
-  │     ├── CRUD
-  │     ├── Authentication
-  │     ├── ORM
-  │     └── REST APIs
-  │
-  ├── Database
-  │     ├── MySQL
-  │     └── SQLite
-  │
-  └── Deployment
-        ├── Git
-        ├── GitHub
-        └── Production Applications
+🐍 Python
+🌐 Django
+🔗 REST APIs
+🗄️ MySQL / SQLite
+⚡ JavaScript
+🧠 Data Structures & Algorithms
+🚀 Full Stack Development
+```
+
+</div>
