@@ -1,27 +1,242 @@
-# 💫 About Me:
-🔭 I’m currently working on<br>Building full-stack web applications using Python and Django<br><br>👯 I’m looking to collaborate on<br>Django, REST API, and full-stack web development projects<br><br>🤝 I’m looking for help with<br>Building scalable, secure, and production-ready web applications<br><br>🌱 I’m currently learning<br>Django REST Framework, REST API development, and web application deployment<br><br>💬 Ask me about<br>Python, Django, REST APIs, CRUD, Authentication, SQL, MySQL, Git, and GitHub<br><br>⚡ Fun fact<br>I built an AI Assistant using Django and the Groq LLM API.
+<!-- ======================= HEADER ======================= -->
 
+<div align="center">
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/prajjwaldixit/) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:prajjwaldixit96@gmail.com) 
+# 👋 Hi, I'm Prajjwal Dixit
 
-# 💻 Tech Stack:
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.shion.dev/api?username=prajjwaldixit96-dev&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://streak-stats.demolab.com/?user=prajjwaldixit96-dev&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.shion.dev/api/top-langs/?username=prajjwaldixit96-dev&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+### 🐍 Python & Django Developer | Full Stack Web Developer
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=prajjwaldixit96-dev&theme=dark&no-frame=false&no-bg=true&margin-w=4)
+<a href="https://github.com/prajjwaldixit96-dev">
+  <img src="https://komarev.com/ghpvc/?username=prajjwaldixit96-dev&label=Profile%20Views&color=0e75b6&style=flat" />
+</a>
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+<br><br>
 
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=prajjwaldixit96-dev&limit=5&theme=dark&combine_all_yearly_contributions=true)
+<a href="https://www.linkedin.com/">
+  <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin" />
+</a>
+<a href="mailto:prajjwaldixit96@gmail.com">
+  <img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail" />
+</a>
+
+</div>
 
 ---
-[![](https://komarev.com/ghpvc/?username=prajjwaldixit96-dev&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+<!-- ======================= TYPING ======================= -->
+
+<div align="center">
+
+<a href="https://git.io/typing-svg">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=36BCF7&center=true&vCenter=true&width=750&lines=Python+%7C+Django+Developer;Full+Stack+Web+Developer;REST+API+Developer;Building+Real+World+Web+Applications;Always+Learning+%26+Building" alt="Typing SVG" />
+</a>
+
+</div>
+
+---
+
+# 👨‍💻 About Me
+
+I'm a **Full Stack Web Developer** focused on building practical and scalable web applications using **Python and Django**.
+
+- 🔭 Currently building full-stack web applications using **Python & Django**
+- 🌱 Currently learning **Django REST Framework, REST APIs & Deployment**
+- 💡 Interested in **Backend Development, APIs, Security & Web Applications**
+- 💬 Ask me about **Python, Django, REST APIs, CRUD, Authentication & SQL**
+- 🤝 Open to collaborating on **Django & Full Stack projects**
+- 🎯 Looking for opportunities as a **Python/Django or Full Stack Developer**
+- ⚡ Fun fact: I built my own **AI Assistant using Django + Groq LLM API**
+
+---
+
+# 🛠️ Tech Stack
+
+### 💻 Programming Languages
+
+<p>
+<img src="https://skillicons.dev/icons?i=python,java,javascript" />
+</p>
+
+### 🌐 Frontend
+
+<p>
+<img src="https://skillicons.dev/icons?i=html,css,bootstrap,javascript" />
+</p>
+
+### ⚙️ Backend & Frameworks
+
+<p>
+<img src="https://skillicons.dev/icons?i=django" />
+</p>
+
+**Django REST Framework • REST APIs • CRUD • Authentication**
+
+### 🗄️ Databases
+
+<p>
+<img src="https://skillicons.dev/icons?i=mysql,sqlite" />
+</p>
+
+### 🔧 Tools & Platforms
+
+<p>
+<img src="https://skillicons.dev/icons?i=git,github,vscode" />
+</p>
+
+### 🔌 APIs & Integrations
+
+`REST API` • `Groq API` • `Razorpay` • `SMTP Email`
+
+---
+
+# 🚀 Featured Projects
+
+## 🔐 Zero Knowledge File Sharing Vault
+
+A secure file-sharing web application built with Django using a **Zero-Knowledge Security Model**.
+
+### Features
+
+- 🔒 Client-side AES encryption
+- 📁 Secure file upload & download
+- 🔗 Protected sharing links
+- 👤 User authentication
+- 🛡️ Role-based access control
+- 🔐 Secure data management
+- 📧 Email integration
+
+### Tech Used
+
+`Python` `Django` `SQLite` `AES-256` `Fernet` `REST API` `JavaScript` `SMTP` `Git`
+
+---
+
+## 🤖 Alfred — Personal AI Assistant
+
+A conversational AI assistant built using **Django and Groq LLM API**.
+
+### Features
+
+- 🧠 Conversational AI
+- 💾 Persistent conversation history
+- 🔄 Context from previous messages
+- 💻 Coding assistance
+- 🔎 Research assistance
+- 📅 Scheduling support
+- 💬 Hinglish responses
+- ⚡ Groq LLM integration
+
+### Tech Used
+
+`Python` `Django` `Groq API` `LLaMA` `SQLite` `REST API` `JavaScript` `Fetch API`
+
+---
+
+## 🛒 E-Commerce Platform
+
+A full-stack e-commerce application built with Django.
+
+### Features
+
+- 🛍️ Product listings
+- 🛒 Shopping cart
+- 👤 User authentication
+- 📦 Order management
+- 🚚 Order status tracking
+- 💳 Razorpay payment integration
+- 🔧 Admin dashboard
+- 🧩 Modular Django architecture
+
+### Tech Used
+
+`Python` `Django` `MySQL` `Razorpay` `Bootstrap` `JavaScript` `Pillow`
+
+---
+
+# 📊 GitHub Statistics
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=prajjwaldixit96-dev&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="180"/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=prajjwaldixit96-dev&layout=compact&theme=tokyonight&hide_border=true" height="180"/>
+
+</div>
+
+---
+
+# 🔥 Contribution Streak
+
+<div align="center">
+
+<img src="https://streak-stats.demolab.com?user=prajjwaldixit96-dev&theme=tokyonight&hide_border=true" />
+
+</div>
+
+---
+
+# 🐍 Contribution Snake
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/prajjwaldixit96-dev/prajjwaldixit96-dev/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake Animation" />
+
+</div>
+
+---
+
+# 🎮 Developer Game Zone
+
+### 🐍 Contribution Snake
+
+Watch the snake eat your GitHub contributions!
+
+<img src="https://raw.githubusercontent.com/prajjwaldixit96-dev/prajjwaldixit96-dev/output/github-contribution-grid-snake.svg" width="800"/>
+
+### 🎯 Challenge
+
+> Can you maintain a 30-day contribution streak?
+
+**Goal:** Build something → Commit it → Improve it → Repeat.
+
+---
+
+# 📈 Contribution Activity
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=prajjwaldixit96-dev&theme=tokyo-night&hide_border=true" width="100%"/>
+
+</div>
+
+---
+
+# 🏆 GitHub Trophies
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=prajjwaldixit96-dev&theme=tokyonight&no-frame=true&no-bg=true&margin-w=6" />
+
+</div>
+
+---
+
+# 💻 What I'm Currently Focusing On
+
+```text
+Python
+  │
+  ├── Django
+  │     ├── CRUD
+  │     ├── Authentication
+  │     ├── ORM
+  │     └── REST APIs
+  │
+  ├── Database
+  │     ├── MySQL
+  │     └── SQLite
+  │
+  └── Deployment
+        ├── Git
+        ├── GitHub
+        └── Production Applications
