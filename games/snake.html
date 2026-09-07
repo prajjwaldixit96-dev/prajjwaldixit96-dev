@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prajjwal's Snake Game</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #0d1117;
+            color: white;
+            font-family: Arial, sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .game-container {
+            text-align: center;
+        }
+
+        h1 {
+            color: #58a6ff;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: #8b949e;
+        }
+
+        canvas {
+            background: #161b22;
+            border: 2px solid #30363d;
+            border-radius: 10px;
+            max-width: 90vw;
+        }
+
+        .score {
+            font-size: 20px;
+            margin: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 7px;
+            background: #238636;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #2ea043;
+        }
+
+        .controls {
+            margin-top: 15px;
+            color: #8b949e;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="game-container">
+
+    <h1>🐍 Prajjwal's Snake Game</h1>
+
+    <p>Use Arrow Keys to play</p>
+
+    <div class="score">
+        Score: <span id="score">0</span>
+    </div>
+
+    <canvas id="game" width="400" height="400"></canvas>
+
+    <br><br>
+
+    <button onclick="restartGame()">🔄 Restart Game</button>
+
+    <div class="controls">
+        ⬆️ ⬇️ ⬅️ ➡️
+    </div>
+
+</div>
+
+<script>
+
+const canvas = document.getElementById("game");
+const ctx = canvas.getContext("2d");
+
+const grid = 20;
+const tileCount = canvas.width / grid;
+
+let snake;
+let food;
+let dx;
+let dy;
+let score;
+let gameLoop;
+
+function startGame() {
+
+    snake = [
+        {x: 10, y: 10},
+        {x: 9, y: 10},
+        {x: 8, y: 10}
+    ];
+
+    dx = 1;
+    dy = 0;
+
+    score = 0;
+
+    document.getElementById("score").innerText = score;
+
+    createFood();
+
+    clearInterval(gameLoop);
+
+    gameLoop = setInterval(game, 100);
+}
+
+function game() {
+
+    const head = {
+        x: snake[0].x + dx,
+        y: snake[0].y + dy
+    };
+
+    // Wall collision
+    if (
+        head.x < 0 ||
+        head.x >= tileCount ||
+        head.y < 0 ||
+        head.y >= tileCount
+    ) {
+        gameOver();
+        return;
+    }
+
+    // Self collision
+    for (let i = 0; i < snake.length; i++) {
+
+        if (
+            head.x === snake[i].x &&
+            head.y === snake[i].y
+        ) {
+            gameOver();
+            return;
+        }
+    }
+
+    snake.unshift(head);
+
+    // Food collision
+    if (
+        head.x === food.x &&
+        head.y === food.y
+    ) {
+
+        score++;
+
+        document.getElementById("score").innerText = score;
+
+        createFood();
+
+    } else {
+
+        snake.pop();
+
+    }
+
+    draw();
+}
+
+function draw() {
+
+    // Background
+    ctx.fillStyle = "#161b22";
+    ctx.fillRect(
+        0,
+        0,
+        canvas.width,
+        canvas.height
+    );
+
+    // Food
+    ctx.fillStyle = "#f85149";
+
+    ctx.fillRect(
+        food.x * grid,
+        food.y * grid,
+        grid - 2,
+        grid - 2
+    );
+
+    // Snake
+    snake.forEach((part, index) => {
+
+        if (index === 0) {
+            ctx.fillStyle = "#58a6ff";
+        } else {
+            ctx.fillStyle = "#238636";
+        }
+
+        ctx.fillRect(
+            part.x * grid,
+            part.y * grid,
+            grid - 2,
+            grid - 2
+        );
+    });
+}
+
+function createFood() {
+
+    food = {
+        x: Math.floor(Math.random() * tileCount),
+        y: Math.floor(Math.random() * tileCount)
+    };
+
+    // Don't place food inside snake
+    for (let part of snake) {
+
+        if (
+            part.x === food.x &&
+            part.y === food.y
+        ) {
+            createFood();
+            return;
+        }
+    }
+}
+
+function changeDirection(event) {
+
+    const key = event.key;
+
+    if (
+        key === "ArrowUp" &&
+        dy === 0
+    ) {
+        dx = 0;
+        dy = -1;
+    }
+
+    if (
+        key === "ArrowDown" &&
+        dy === 0
+    ) {
+        dx = 0;
+        dy = 1;
+    }
+
+    if (
+        key === "ArrowLeft" &&
+        dx === 0
+    ) {
+        dx = -1;
+        dy = 0;
+    }
+
+    if (
+        key === "ArrowRight" &&
+        dx === 0
+    ) {
+        dx = 1;
+        dy = 0;
+    }
+}
+
+function gameOver() {
+
+    clearInterval(gameLoop);
+
+    setTimeout(() => {
+
+        alert(
+            "Game Over! 🐍\nYour Score: " + score
+        );
+
+    }, 100);
+}
+
+function restartGame() {
+    startGame();
+}
+
+document.addEventListener(
+    "keydown",
+    changeDirection
+);
+
+startGame();
+
+</script>
+
+</body>
+</html>
