@@ -113,13 +113,6 @@ Full Stack Developer with a passion for crafting **robust and scalable web appli
 <img src="https://img.shields.io/badge/English-6A1B9A?style=for-the-badge" />
 </p>
 
-### 🗣️ Languages I Speak
-
-<p align="left">
-<img src="https://img.shields.io/badge/Hindi-6A1B9A?style=for-the-badge" />
-<img src="https://img.shields.io/badge/English-6A1B9A?style=for-the-badge" />
-</p>
-
 ---
 
 # 🚀 Featured Projects
