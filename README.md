@@ -72,6 +72,10 @@ I’m a Full Stack Web Developer specializing in Python, Django and modern web t
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
 <img src="https://img.shields.io/badge/Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" />
+<img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white" />
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+<img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />
+<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
 </p>
 
 ### ⚙️ Frameworks & Libraries
@@ -82,6 +86,7 @@ I’m a Full Stack Web Developer specializing in Python, Django and modern web t
 <img src="https://img.shields.io/badge/WhiteNoise-333333?style=for-the-badge" />
 <img src="https://img.shields.io/badge/Pillow-3776AB?style=for-the-badge&logo=python&logoColor=white" />
 <img src="https://img.shields.io/badge/Groq_SDK-F55036?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
 </p>
 
 ### 🗄️ Databases
@@ -106,6 +111,7 @@ I’m a Full Stack Web Developer specializing in Python, Django and modern web t
 <img src="https://img.shields.io/badge/Razorpay-0C2451?style=for-the-badge&logo=razorpay&logoColor=white" />
 <img src="https://img.shields.io/badge/Groq_API-F55036?style=for-the-badge" />
 <img src="https://img.shields.io/badge/SMTP_Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+<img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" />
 </p>
 
 ### 🗣️ Languages I Speak
