@@ -18,14 +18,16 @@
 
 ## 👨‍💻 About Me
 
-Full Stack Developer with a passion for crafting **robust and scalable web applications**, backed by hands-on experience across the full development lifecycle — from concept to deployment. I specialize in building secure, production-ready systems with **Python and Django**, and I'm always looking to turn real-world problems into clean, working software.
+I’m a Full Stack Web Developer specializing in Python, Django and modern web technologies, with hands-on experience building responsive, secure and database-driven applications.
 
-- 🎓 **MCA** graduate from Babu Banarsi Das University (2024 – 2026), BCA from Public College of Professional Studies (2021 – 2024)
-- 💼 Completed a 90-day Industrial Training in Web Development at **Techpile Technology Pvt. Ltd.**, working across frontend, backend, authentication, and database integration
-- 🔐 Experienced with CRUD, Authentication, REST APIs, and end-to-end database integration
-- 🌱 Currently sharpening my backend engineering and DSA fundamentals
-- 🤝 Eager to bring my skills to a forward-thinking team and make a meaningful impact
-- 📍 Based in Lucknow, Uttar Pradesh, India
+- 🚀 Developing full-stack web applications from frontend to backend
+- 🐍 Building backend systems and REST APIs using Python, Django & Django REST Framework
+- ⚛️ Working with modern frontend technologies including React, Next.js, JavaScript, HTML5, CSS3 & Bootstrap
+- 🗄️ Experienced with MySQL & SQLite and database-driven application development
+- 🔐 Implementing Authentication, CRUD Operations, Role-Based Access Control & secure data handling
+- 🔗 Integrating third-party services and APIs such as Razorpay, Groq API & SMTP
+- 🛠️ Using Git, GitHub, VS Code & Render across development and deployment workflows
+- 💡 Focused on writing clean, maintainable code and building practical, scalable real-world applications
 
 ---
 
