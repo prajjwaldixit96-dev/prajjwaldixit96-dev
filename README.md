@@ -195,7 +195,7 @@ Developed a full-stack e-commerce web application featuring product listings, sh
 
 <div align="center">
 
-<img src="./assets/activity-graph.svg" width="70%" alt="Contribution Activity" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=prajjwaldix96-dev&theme=tokyo-night&hide_border=true" width="70%" alt="Contribution Activity" />
 
 </div>
 
