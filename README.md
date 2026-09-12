@@ -6,7 +6,7 @@
 
 ### 💻 Full Stack Web Developer | Python & Django
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&center=true&vCenter=true&width=650&lines=Full+Stack+Web+Developer;Python+%7C+Django+%7C+REST+APIs;Building+Robust+%26+Scalable+Web+Apps;End-to-End%2C+Concept+to+Deployment" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&center=true&vCenter=true&width=650&lines=Full+Stack+Web+Developer;Python+%7C+Django+%7C+REST+APIs;Building+Practical+Web+Applications;From+Frontend+to+Backend" alt="Typing SVG" />
 
 <p>
 <a href="https://prajjwal-portfolio.onrender.com/"><img src="https://img.shields.io/badge/Portfolio-00E5FF?style=for-the-badge&logo=googlechrome&logoColor=black" /></a>
@@ -20,52 +20,47 @@
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=1&section=header&color=00E5FF" width="100%"/>
-
 ## 👨‍💻 About Me
 
-I’m a Full Stack Web Developer specializing in Python, Django and modern web technologies, with hands-on experience building responsive, secure and database-driven applications.
+I'm a **Full Stack Web Developer specializing in Python and Django**, with hands-on experience building responsive, database-driven web applications and REST APIs.
 
-- 🚀 Developing full-stack web applications from frontend to backend
-- 🐍 Building backend systems and REST APIs using Python, Django & Django REST Framework
-- ⚛️ Working with modern frontend technologies including React, Next.js, JavaScript, HTML5, CSS3 & Bootstrap
-- 🗄️ Experienced with MySQL & SQLite and database-driven application development
-- 🔐 Implementing Authentication, CRUD Operations, Role-Based Access Control & secure data handling
-- 🔗 Integrating third-party services and APIs such as Razorpay, Groq API & SMTP
-- 🛠️ Using Git, GitHub, VS Code & Render across development and deployment workflows
-- 💡 Focused on writing clean, maintainable code and building practical, scalable real-world applications
+* 🚀 Developing full-stack web applications from frontend to backend
+* 🐍 Building backend systems and REST APIs using **Python, Django & Django REST Framework**
+* ⚛️ Working with **React, Next.js, JavaScript, HTML5, CSS3, Bootstrap & Tailwind CSS**
+* 🗄️ Working with **MySQL & SQLite** for database-driven applications
+* 🔐 Implementing authentication, CRUD operations, role-based access control and secure data handling
+* 🔗 Integrating third-party services and APIs such as **Razorpay, Groq API & SMTP**
+* 🛠️ Using **Git, GitHub, VS Code & Render** across development and deployment workflows
+* 💡 Focused on building practical applications and continuously improving my full-stack development skills
 
 ---
-
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=1&section=header&color=00E5FF" width="100%"/>
 
 ## 💼 Work Experience
 
 ### Web Development Intern — Techpile Technology Pvt. Ltd.
+
 **Jan 2026 – Apr 2026 · On-site, Lucknow**
 
-- Completed a 90-day Industrial Training in Web Development using Python & Django
-- Executed frontend and backend development tasks to enhance application functionality
-- Implemented CRUD operations, authentication, and database integration for seamless user experiences
-- Gained hands-on experience in real-world project development, contributing to project success
-- Adhered to industry coding practices while maintaining a structured development workflow
+* Completed a **90-day Industrial Training in Web Development** using Python and Django
+* Worked on frontend and backend development tasks for web applications
+* Implemented **CRUD operations, authentication and database integration**
+* Worked with HTML, CSS, JavaScript, Bootstrap, Python and Django
+* Used MySQL and SQLite for database-driven application development
+* Used Git and GitHub as part of the development workflow
 
-**Tech used:** `Python` `Django` `Bootstrap 5` `HTML5` `CSS3` `JavaScript` `MySQL` `SQLite` `Git` `GitHub`
+**Tech Used:**
+`Python` `Django` `Bootstrap 5` `HTML5` `CSS3` `JavaScript` `MySQL` `SQLite` `Git` `GitHub`
 
 ---
-
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=1&section=header&color=00E5FF" width="100%"/>
 
 ## 🎓 Education
 
-| Year | Degree | Institute |
-|------|--------|-----------|
-| 2024 – 2026 | Master in Computer Applications (MCA) | Babu Banarsi Das University (BBDU) |
-| 2021 – 2024 | Bachelor of Computer Applications (BCA) | Public College of Professional Studies |
+| Year        | Degree                                  | Institute                                      |
+| ----------- | --------------------------------------- | ---------------------------------------------- |
+| 2024 – 2026 | Master of Computer Applications (MCA)   | Babu Banarasi Das University (BBDU)            |
+| 2021 – 2024 | Bachelor of Computer Applications (BCA) | Lucknow Public College of Professional Studies |
 
 ---
-
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=1&section=header&color=00E5FF" width="100%"/>
 
 # 🛠️ Tech Stack
 
@@ -108,15 +103,6 @@ I’m a Full Stack Web Developer specializing in Python, Django and modern web t
 <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
 </p>
 
-### 🔧 Tools & Platforms
-
-<p align="left">
-<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-<img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
-<img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white" />
-</p>
-
 ### 🔌 APIs & Integrations
 
 <p align="left">
@@ -126,53 +112,86 @@ I’m a Full Stack Web Developer specializing in Python, Django and modern web t
 <img src="https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" />
 </p>
 
-### 🗣️ Languages I Speak
+### 🔧 Tools & Platforms
 
 <p align="left">
-<img src="https://img.shields.io/badge/Hindi-6A1B9A?style=for-the-badge" />
-<img src="https://img.shields.io/badge/English-6A1B9A?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+<img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
+<img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white" />
 </p>
 
 ---
-
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=1&section=header&color=00E5FF" width="100%"/>
 
 # 🚀 Featured Projects
 
 ## 🔐 Zero Knowledge File Sharing Vault
 
-Developed a secure file sharing web application using Django, implementing a **Zero-Knowledge Security Model**. Features include client-side AES encryption, secure upload/download, protected sharing links, user authentication, and role-based access control — ensuring complete data privacy and secure data management.
+A secure file-sharing web application built with **Python and Django**, focused on encrypted file handling, protected access and secure file sharing.
 
-**Tech:** `Python` `Django 5` `SQLite` `AES-256 Encryption` `Fernet Encryption` `REST API` `Session Auth` `HTML5` `CSS3` `JavaScript` `SMTP Email`
+### Key Features
+
+* 🔐 File encryption using **AES/Fernet encryption**
+* 👤 User authentication and protected access
+* 📁 Secure file upload and download
+* 🔗 Protected file-sharing functionality
+* 🛡️ Role-based access and permission handling
+* 📧 SMTP-based email functionality
+* 🔌 REST API integration
+
+**Tech:**
+`Python` `Django 5` `SQLite` `AES-256 Encryption` `Fernet Encryption` `REST API` `Session Authentication` `HTML5` `CSS3` `JavaScript` `SMTP Email`
 
 ---
 
 ## 🤖 Alfred — Personal AI Assistant Chatbot
 
-Developed a conversational AI chatbot utilizing the **Groq LLM API**, featuring a custom prompt and persistent conversation history. The assistant maintains context across the last 10 messages, responds in Hinglish, and facilitates tasks such as coding assistance, research, scheduling, and emotional support. Built with a Django backend and a dynamic frontend interface.
+A conversational AI assistant built with **Django and the Groq LLM API**, featuring persistent conversation history and a dynamic web interface.
 
-**Tech:** `Python` `Django 5.2` `Groq API (LLaMA 3.3 70B)` `SQLite` `REST API (JSON)` `python-dotenv` `Vanilla JavaScript (Fetch API)` `HTML5` `CSS3`
+### Key Features
+
+* 🤖 LLM-powered conversational responses
+* 🧠 Persistent conversation history
+* 💬 Context handling for recent messages
+* 🔌 Groq API integration
+* ⚡ Dynamic frontend using JavaScript Fetch API
+* 🗄️ Database-backed conversation storage
+* 🌐 Django-based backend and web interface
+
+**Tech:**
+`Python` `Django 5.2` `Groq API` `LLaMA 3.3 70B` `SQLite` `REST/JSON` `python-dotenv` `Vanilla JavaScript` `Fetch API` `HTML5` `CSS3`
 
 ---
 
 ## 🛒 E-Commerce Platform
 
-Developed a full-stack e-commerce web application featuring product listings, shopping cart, order management, and an admin dashboard. Implemented user authentication, order status tracking, and a modular Django app structure with dedicated modules for accounts, cart, orders, and store management.
+A full-stack e-commerce web application built with **Django**, covering product management, shopping cart functionality, orders, authentication and online payments.
 
-**Tech:** `Python` `Django 5.2` `MySQL` `Razorpay Payment Gateway` `Pillow` `WhiteNoise` `Gunicorn` `python-dotenv` `Bootstrap 5` `HTML5` `CSS3` `JavaScript`
+### Key Features
+
+* 🛍️ Product listing and management
+* 🛒 Shopping cart functionality
+* 📦 Order creation and order-status tracking
+* 👤 User authentication
+* 🔐 Protected user functionality
+* 💳 Razorpay payment integration
+* 🛠️ Admin dashboard
+* 🗄️ MySQL database integration
+* 📱 Responsive Bootstrap-based interface
+
+**Tech:**
+`Python` `Django 5.2` `MySQL` `Razorpay Payment Gateway` `Pillow` `WhiteNoise` `Gunicorn` `python-dotenv` `Bootstrap 5` `HTML5` `CSS3` `JavaScript`
 
 ---
-
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=1&section=header&color=00E5FF" width="100%"/>
 
 # 🎮 Developer Space Shooter
 
 <div align="center">
 
 <img
-  src="./assets/shooter.svg"
-  width="100%"
-  alt="Developer Space Shooter"
+src="./assets/shooter.svg"
+width="100%"
+alt="Developer Space Shooter"
 />
 
 <br>
@@ -182,8 +201,6 @@ Developed a full-stack e-commerce web application featuring product listings, sh
 </div>
 
 ---
-
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=1&section=header&color=00E5FF" width="100%"/>
 
 # 📊 GitHub Statistics
 
@@ -196,15 +213,14 @@ Developed a full-stack e-commerce web application featuring product listings, sh
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=1&section=header&color=00E5FF" width="100%"/>
-
 # 🔥 GitHub Contribution Streak
 
 <div align="center">
 
 <img
-  src="https://streak-stats.demolab.com/?user=prajjwaldixit96-dev&theme=tokyonight&hide_border=true"
-  width="70%"
+src="https://streak-stats.demolab.com/?user=prajjwaldixit96-dev&theme=tokyonight&hide_border=true"
+width="70%"
+alt="GitHub Contribution Streak"
 />
 
 </div>
@@ -214,14 +230,12 @@ Developed a full-stack e-commerce web application featuring product listings, sh
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/prajjwaldixit96-dev/prajjwaldixit96-dev/output/github-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/prajjwaldixit96-dev/prajjwaldixit96-dev/output/github-snake.svg" />
-  <img alt="github contribution snake" src="https://raw.githubusercontent.com/prajjwaldixit96-dev/prajjwaldixit96-dev/output/github-snake.svg" width="100%"/>
+  <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/prajjwaldixit96-dev/prajjwaldixit96-dev/output/github-snake.svg" width="100%"/>
 </picture>
 
 </div>
 
 ---
-
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=1&section=header&color=00E5FF" width="100%"/>
 
 # 🏆 GitHub Trophies
 
@@ -233,21 +247,27 @@ Developed a full-stack e-commerce web application featuring product listings, sh
 
 ---
 
-<img src="https://capsule-render.vercel.app/api?type=transparent&height=1&section=header&color=00E5FF" width="100%"/>
-
 # 🎯 Current Focus
 
 <div align="center">
 
 ```text
-🐍 Python
-🌐 Django
-🔗 REST APIs
+🐍 Python & Django
+🔗 REST APIs & Django REST Framework
 🗄️ MySQL / SQLite
 ⚡ JavaScript
 🧠 Data Structures & Algorithms
 🚀 Full Stack Development
+☁️ Deployment & Production Workflows
 ```
+
+</div>
+
+---
+
+<div align="center">
+
+### 💻 Building. Learning. Improving.
 
 </div>
 
