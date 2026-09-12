@@ -1,3 +1,5 @@
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00E5FF,100:8E2DE2&height=180&section=header&text=Welcome%20To%20My%20Profile&fontSize=38&fontColor=ffffff&animation=fadeIn&desc=Full%20Stack%20Web%20Developer&descAlignY=65&descSize=18" width="100%"/>
+
 <div align="center">
 
 # 👋 Hi, I'm Prajjwal Dixit
@@ -12,9 +14,13 @@
 <a href="mailto:prajjwaldixit96@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
 
+<img src="https://komarev.com/ghpvc/?username=prajjwaldixit96-dev&color=00E5FF&style=for-the-badge&label=Profile+Views" />
+
 </div>
 
 ---
+
+<img src="https://capsule-render.vercel.app/api?type=transparent&height=1&section=header&color=00E5FF" width="100%"/>
 
 ## 👨‍💻 About Me
 
@@ -189,6 +195,16 @@ Developed a full-stack e-commerce web application featuring product listings, sh
 
 </div>
 
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/prajjwaldixit96-dev/prajjwaldixit96-dev/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/prajjwaldixit96-dev/prajjwaldixit96-dev/output/github-snake.svg" />
+  <img alt="github contribution snake" src="https://raw.githubusercontent.com/prajjwaldixit96-dev/prajjwaldixit96-dev/output/github-snake.svg" width="100%"/>
+</picture>
+
+</div>
+
 ---
 ---
 
@@ -217,3 +233,5 @@ Developed a full-stack e-commerce web application featuring product listings, sh
 ```
 
 </div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00E5FF,100:8E2DE2&height=120&section=footer" width="100%"/>
